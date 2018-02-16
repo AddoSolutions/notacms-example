@@ -1,0 +1,56 @@
+{
+  "name": "st2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.artmanholdings.com/AddoSolutions/st2"
+  },
+  "author": "Nick Artman <nick@artmanholdings.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "express": "^4.16.2",
+    "express-nunjucks": "^2.2.3",
+    "notacms": "^0.6.1",
+    "nunjucks": "^3.0.1",
+    "require-glob": "^3.2.0",
+    "angular": "^1.6.8",
+    "animate.css": "^3.5.2",
+    "animsition": "^4.0.2",
+    "assert": "^1.4.1",
+    "bootstrap": "^3.3.7",
+    "browserify": "^14.5.0",
+    "chai": "^4.1.2",
+    "contentful": "^5.0.3",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-less": "^3.4.0",
+    "gulp-sourcemaps": "^2.6.2",
+    "hamburgers": "github:jonsuh/hamburgers",
+    "headroom.js": "^0.9.4",
+    "jquery-nice-select": "^1.1.0",
+    "jquery.mmenu": "github:frdh/jQuery.mmenu",
+    "lightbox2": "^2.9.0",
+    "linearicons": "^1.0.1",
+    "minimongo": "^4.8.0",
+    "mocha": "^4.0.1",
+    "mongodb": "^2.2.33",
+    "node-minify": "^2.4.1",
+    "owl.carousel": "^2.2.0",
+    "remodal": "^1.1.1",
+    "revolution": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-less": "^3.4.0",
+    "gulp-sourcemaps": "^1.12.1",
+    "path": "^0.12.7"
+  }
+}

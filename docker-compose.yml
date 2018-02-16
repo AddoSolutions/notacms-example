@@ -1,0 +1,39 @@
+mongodb:
+    image: mongo:latest
+    restart: always
+    container_name: "mongodb"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+
+prod:
+    build: .
+    restart: always
+    ports:
+        - 80:8000
+        - 443:8000
+    volumes:
+        - ./:/app
+    entrypoint: "/app/run.sh"
+    links:
+        - mongodb:db
+
+
+dev:
+    build: .
+    restart: always
+    environment:
+      - APP_DEV=yup
+      - NO_BROWSERSYNC=yup
+    ports:
+        - 8000:8000
+        - 8443:8000
+    volumes:
+        - ./:/app
+    entrypoint: "/app/run.sh"
+    links:
+        - mongodb:db
