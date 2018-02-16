@@ -1,4 +1,4 @@
-# Scott Thomas Furniture
+# Not A CMS Example
 
 This is the code repository for example.notacms.com
 
