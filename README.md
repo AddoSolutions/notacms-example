@@ -10,7 +10,7 @@ You need to create a `config.json` file (or `config-dev.json` file for dev mode)
 {
   "space": "contentful-space-id-here",
   "accessToken": "contentful-access-token-here",
-  "mongo": "mongodb://db:27017/lightspeedhosting"
+  "mongo": "mongodb://db:27017/notacms"
 }
 ```
 
